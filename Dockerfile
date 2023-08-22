@@ -1,7 +1,13 @@
-FROM python:latest
-COPY requirements.txt /opt/app/requirements.txt
-WORKDIR /opt/app
-RUN pip install -r requirements.txt
-COPY . /opt/app 
+FROM node:latest
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
 EXPOSE 3000
-CMD ["python3", "app.py"] 
+
+CMD ["node", "index.js"]

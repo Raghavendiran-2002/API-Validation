@@ -1,10 +1,8 @@
 version: '3'
 services:
   app:
-    container_name: PythonAPI
+    container_name: GithubAPI
     restart: always
     build: .
     ports:
       - '3000:3000'
-    
-
