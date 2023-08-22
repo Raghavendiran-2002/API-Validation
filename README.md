@@ -1,6 +1,6 @@
 # API Validation
 
-![alt text](https://drive.google.com/file/d/1kj1HeLCaGo2VjlblFNoH2C7eoVnBjhZK/view?usp=sharing)
+![alt text](https://firebasestorage.googleapis.com/v0/b/ble-positioning-system.appspot.com/o/8911.png_860.png?alt=media&token=3121358c-8d15-4b85-88af-4f55f0e08601)
 
 ### Problem statement
 
