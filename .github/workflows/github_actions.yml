@@ -8,8 +8,8 @@ on:
 
 jobs:
   run-tests:
-    uses: Raghavendiran-2002/APITester/.github/workflows/github_actions.yml@main
+    uses: Raghavendiran-2002/API-Validation/.github/workflows/github_actions.yml@main
     secrets: inherit
     with:
       #YOUR_MAIL_ID: <your@mail.com>
-      YOUR_MAIL_ID: sample@gmail.com
+      YOUR_MAIL_ID: raghavendiran222222@gmail.com
