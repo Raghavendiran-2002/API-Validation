@@ -1,44 +1,15 @@
-name: API_Validation
-
+name: Validating API
 on:
-  workflow_call:
-    inputs:
-      YOUR_MAIL_ID:
-        required: true
-        type: string
+  workflow_dispatch:
+  push:
+    branches: ["Python"]
+  pull_request:
+    branches: ["Python"]
 
 jobs:
-  Validating:
-    runs-on: ubuntu-latest
-    outputs:
-      output1: ${{ steps.step1.outputs.test }}
-      output2: ${{ steps.step2.outputs.test }}
-    steps:
-      - uses: actions/checkout@v3
-      - uses: adambirds/docker-compose-action@v1.3.0
-        with:
-          compose-file: "./docker-compose.yml"
-          down-flags: "--volumes"
-          services: |
-            app
-          test-container: app
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-      - run: npm install -g newman
-      - run: newman run "https://api.getpostman.com/collections/${{ secrets.COLLECTIONID }}?apikey=${{ secrets.POSTMANAPIKEY }}" > result.txt | exit 0
-      - name: Send mail
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
-          username: ${{secrets.MAIL_USERNAME}}
-          password: ${{secrets.MAIL_PASSWORD}}
-          subject: API-Validation Results Out
-          to: ${{ inputs.YOUR_MAIL_ID }}, ${{secrets.SENDER_MAIL}}
-          from: Me
-          body: Check your results below... All the best
-          attachments: result.txt
+  run-tests:
+    uses: Raghavendiran-2002/APITester/.github/workflows/github_actions.yml@main
+    secrets: inherit
+    with:
+      #YOUR_MAIL_ID: <your@mail.com>
+      YOUR_MAIL_ID: sample@gmail.com
