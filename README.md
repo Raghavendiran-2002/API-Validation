@@ -79,3 +79,26 @@ In order to submit a solution, follow these steps.
   - If it's a cross mark, the logs will tell you what you did wrong.
   - Fix the issue, and repeat steps 4+ to resubmit
 - Congratulations, you have successfully solved the problem
+
+### Note
+
+###### Set Secrets Environment variable:
+
+Repo -> Settings -> Security -> Secrets and variables -> Actions -> New repository secret ->
+
+```
+Name = "COLLECTIONID"
+Secret = "<collectionID>"
+
+Name = "POSTMANAPIKEY"
+Secret = "<apikey>"
+
+Name = "MAIL_USERNAME"
+Secret = "<username>"
+
+Name = "MAIL_PASSWORD"
+Secret = "<password>"
+
+Name = "SENDER_MAIL"
+Secret = "<emailID>"
+```
