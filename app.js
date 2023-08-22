@@ -7,12 +7,12 @@ router.get("/greeting", async (req, res) => {
 
 router.post("/add", async (req, res) => {
   // write your code here...
-  res.status(200);
+  res.status(200).send("");
 });
 
 router.post("/subtract", async (req, res) => {
   // write your code here...
-  res.status(200);
+  res.status(200).send("");
 });
 
 module.exports = router;
