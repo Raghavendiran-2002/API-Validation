@@ -11,6 +11,7 @@ def greeting():
 def add():
     # write your code here...
     # return ""
+    
      if request.method == 'POST':
         data = request.get_json()
         first = data['first']
