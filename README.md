@@ -1,8 +1,6 @@
 # API Validation
 
-<p align="center">
-<img src="https://drive.google.com/file/d/1kj1HeLCaGo2VjlblFNoH2C7eoVnBjhZK/view?usp=sharing" width="860" height="860" alt="Logo" title="NaN(O) logo">
-</p>
+![alt text](https://drive.google.com/file/d/1kj1HeLCaGo2VjlblFNoH2C7eoVnBjhZK/view?usp=sharing)
 
 ### Problem statement
 
