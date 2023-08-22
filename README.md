@@ -1,6 +1,6 @@
 # API Validation
 
-![alt text](https://firebasestorage.googleapis.com/v0/b/ble-positioning-system.appspot.com/o/8911.png_860.png?alt=media&token=3121358c-8d15-4b85-88af-4f55f0e08601)
+![alt text](https://firebasestorage.googleapis.com/v0/b/ble-positioning-system.appspot.com/o/APIValidation.png?alt=media&token=04866a63-e63b-4bc6-aa45-6ffda9825d68)
 
 ### Problem statement
 
